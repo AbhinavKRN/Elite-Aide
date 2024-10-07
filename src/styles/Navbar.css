@@ -1,0 +1,60 @@
+.navbar {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: linear-gradient(45deg, #1c1c1c, #121212);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 126.7px;
+    height: 59px;
+    border: 7.74px solid transparent;
+    margin-right: auto;
+  }
+  
+  .logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 59px;
+    gap: 40px;
+  }
+  
+  .navbar a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 38.67px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+  
+  .download-link {
+    font-weight: bold;
+  }
+  .navbar a:hover {
+    color: #88BAD6;
+  }
+  
+  
