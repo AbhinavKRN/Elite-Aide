@@ -33,9 +33,9 @@
   }
   
   .download-now {
-    display: flex;                   /* Use flex to align items */
-    align-items: center;             /* Vertically center the text and icon */
-    justify-content: center;         /* Horizontally center the content */
+    display: flex;                   
+    align-items: center;           
+    justify-content: center;         
     width: 350px;
     height: 60px;
     padding: 15.23px 0;
@@ -64,5 +64,48 @@
     height: auto;
     object-fit: contain;
     margin-left: 30px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .hero-content {
+      max-width: 100%;
+      text-align: center;
+      padding: 0 15px; 
+    }
+  
+    .hero-content h1 {
+      font-size: 28px;
+      line-height: 1.2;
+      word-wrap: break-word; 
+    }
+  
+    .hero-content p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+  
+    .download-now {
+      width: 80%;
+      padding: 15px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  
+    .phone-mockup {
+      width: 80%;
+      height: auto;
+      margin-top: 20px;
+    }
   }
   

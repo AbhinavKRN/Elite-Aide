@@ -42,3 +42,17 @@
     color: white;
   }
   
+@media (max-width: 768px) {
+  .enhancement-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .enhancement-title, .enhancement-subtitle {
+    font-size: 20px;
+  }
+
+  .enhancement-paragraph {
+    font-size: 18px;
+  }
+}

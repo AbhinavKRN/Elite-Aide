@@ -1,60 +1,98 @@
+/* Navbar styling */
 .navbar {
-    width: 100%;
-    height: 90px;
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: linear-gradient(45deg, #1c1c1c, #121212);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.logo-box {
+  width: 126.7px;
+  height: 59px;
+}
+
+.logo-image {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar a {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #88BAD6;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 80px;
-    background: linear-gradient(45deg, #1c1c1c, #121212);
-    
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-open .nav-links {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-  }
-  
-  .logo-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 126.7px;
-    height: 59px;
-    border: 7.74px solid transparent;
-    margin-right: auto;
-  }
-  
-  .logo-image {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-  }
-  
-  .nav-links {
-    display: flex;
-    justify-content: space-between;
+    background-color: #1c1c1c;
+    justify-content: center;
     align-items: center;
-    width: auto;
-    height: 59px;
-    gap: 40px;
+    z-index: 1000;
   }
-  
-  .navbar a {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 38.67px;
+
+  .nav-open a {
+    padding: 20px 0;
     color: white;
+    font-size: 24px;
     text-decoration: none;
+    width: 100%;
     text-align: center;
-    transition: color 0.3s ease;
   }
-  
-  .download-link {
-    font-weight: bold;
-  }
-  .navbar a:hover {
+
+  .nav-open a:hover {
     color: #88BAD6;
   }
-  
-  
+}
